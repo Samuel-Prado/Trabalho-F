@@ -1,0 +1,209 @@
+/*CSS3
+*******Estilizagem do site Filosofia*******
+
+"CSS é massa demais! Mude minha mente." -- Edu, 2023.
+
+Participantes:    
+    Eduardo Carvalho Valadão,    Isabela Cunha Silva,   Lucas Matheus de Oliveira Barbosa, 
+    Samuel Prado Soares,    Victor Afonso Fernandes.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinza: #E0E0E0;
+    --color-azul-100: #364c59;
+    --color-azul-10: #84b1d9;
+    --color-azul-30: #71A8D8;
+    --color-azul-50: #5fa0d9;
+}
+
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--color-azul-50);
+    display: block;
+}
+
+.navbar {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;    
+}
+
+.itens {
+    display: flex;
+}
+
+.link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    text-decoration: none;
+    padding: 15px 5px;
+    border-radius: 15px;
+    transition: background .8s ease-in-out;
+}
+
+li a:hover {
+    background-color: var(--color-azul-10);
+}
+
+/**/
+
+/*Títulos, parágrafos, etc*/
+.top-title {
+    font-size: 1.5rem;
+    color: var(--color-azul-100);
+    text-transform: uppercase;
+}
+
+.tl1 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-azul-100);
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+img.imgb {
+    max-width: 60%;
+    position: relative;
+    height: 60%;
+    border-radius: 50%;
+}
+
+img.imga {
+    max-width: 70%;
+    right: 2%;
+    position: absolute;
+    height: 70%;
+    animation: img 4s ease-in-out;
+}
+@keyframes img{
+    25% {
+        transform: rotate(-180deg);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+.mgh {
+    padding-right: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.p1,.p2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: var(--cinza);
+}
+
+.p2 {
+    font-style: italic;
+    color: var(--color-azul-10);
+    font-size: .8rem;
+}
+
+.cm {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: opacity .8s ease-in-out;
+}
+
+.cm:hover {
+    opacity: .6;
+}
+.fm {
+    text-align: center;
+    color: var(--color-azul-100);
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: var(--color-azul-10);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+
+.caixaM {
+    margin-top: 50px;
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+    background-color: var(--color-azul-100);
+}
+
+.ps {
+    color: var(--cinza);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.ps2 {
+    color: var(--color-azul-10);
+    padding: 5px;
+}
+
+/**/
