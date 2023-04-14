@@ -1,4 +1,4 @@
-var btnMob = document.getElementByClassName("btnMub");
+let btnMob = document.getElementByClassName("btnMub");
 
 btnMob.addEventListener('click', function() {
 
