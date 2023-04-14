@@ -320,7 +320,7 @@ img.imga {
 }
     @media screen and (max-width: 276px) {
         img.imga {
-            top: -15%;
+            top: -25%;
         }
 
         @keyframes img {
