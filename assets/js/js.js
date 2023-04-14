@@ -1,7 +1,7 @@
 
 var btnMob = document.querySelector(".btnMub");
 
-document.addEventListener('click', function() {
+btnMob.addEventListener('click', function() {
 
     var btnMob1 = document.querySelector(".linha1");
     var btnMob2 = document.querySelector(".linha2");
