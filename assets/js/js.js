@@ -1,7 +1,7 @@
 
 var btnMob = document.getElementByClassName("btnMub");
 
-btnMob.addEventListener('click', function() {
+document.addEventListener('click', function() {
 
     alert("ou");
 });
