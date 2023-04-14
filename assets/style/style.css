@@ -27,7 +27,7 @@ Participantes:
 
 html {
     scroll-behavior: smooth;
-} 
+}
 
 body {
     width: 100%;
@@ -40,6 +40,7 @@ body {
 
 nav {
     width: 100%;
+    padding: 0 5px;
     background-color: var(--color-azul-50);
     display: block;
 }
@@ -54,11 +55,60 @@ nav {
 }
 
 .title {
-    display: flex;    
+    display: flex;
 }
 
 .itens {
     display: flex;
+}
+
+.btnMub {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    display: none;
+    cursor: pointer;
+}
+.linha1 {
+    background-color: var(--color-azul-100);
+    width: 35px;
+    height: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s all ease-in-out;
+}
+
+.linha2 {
+    background-color: var(--color-azul-100);
+    width: 35px;
+    height: 5px;
+    transition: 0.4s all ease-in-out;
+}
+
+.linha3 {
+    background-color: var(--color-azul-100);
+    width: 35px;
+    height: 5px;
+    margin-top: 5px;
+    transition: 0.4s all ease-in-out ;
+}
+
+.linha1.ativo {
+    margin-bottom: -5px;
+    transform: rotate(45deg);
+    transition: 0.4s all ease-in-out;
+}
+
+.linha2.ativo {
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.linha3.ativo {
+    margin-top: -5px;
+    transform: rotate(-45deg);
+    transition: 0.4s all ease-in-out;
 }
 
 .link {
@@ -76,9 +126,6 @@ li a:hover {
     background-color: var(--color-azul-10);
 }
 
-/**/
-
-/*Títulos, parágrafos, etc*/
 .top-title {
     font-size: 1.5rem;
     color: var(--color-azul-100);
@@ -107,17 +154,21 @@ img.imga {
     max-height: 70%;
     animation: img 4s ease-in-out;
 }
-@keyframes img{
+
+@keyframes img {
     25% {
         transform: rotate(-180deg);
     }
+
     50% {
         transform: translateX(-200px);
     }
+
     75% {
         transform: scale(1.1);
     }
 }
+
 .mgh {
     padding-right: 40px;
     width: 100%;
@@ -137,7 +188,8 @@ img.imga {
     padding: 10px;
 }
 
-.p1,.p2 {
+.p1,
+.p2 {
     font-size: 1.5rem;
     display: flex;
     justify-content: flex-start;
@@ -162,6 +214,7 @@ img.imga {
 .cm:hover {
     opacity: .6;
 }
+
 .fm {
     text-align: center;
     color: var(--color-azul-100);
@@ -210,17 +263,25 @@ img.imga {
 }
 
 @media screen and (max-width: 600px) {
-    .itens {
-        visibility: hidden;
+
+    .nav {
+        padding: 15px 10px;
     }
+
+    .itens {
+        display: none;
+    }
+
     .mgh {
         flex-direction: column;
     }
+
     img.imgb {
         margin-left: 50px;
         width: 40%;
         height: 40%;
     }
+
     img.imga {
         margin-left: 50px;
         width: 50%;
@@ -229,41 +290,55 @@ img.imga {
         right: 0;
         position: relative;
     }
+
     .p {
         margin-bottom: 50px;
     }
+
     .caixaM {
         flex-direction: column;
     }
+
     .caixa {
         width: 100%;
     }
-    
+
     .tl1 {
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+    }
+    
+    .btnMub {
+        display: flex;
     }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 300px) {
     img.imga {
         top: -25%;
     }
-    @keyframes img {
-        25% {
-            transform: rotate(-180deg);
-        }
-        50% {
-            transform: translateX(-90px);
-        }
-        75% {
-            transform: scale(1.1);
-        }  
-    }
-    .tl1 {
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
-        }
 }
+    @media screen and (max-width: 270px) {
+        img.imga {
+            top: -18%;
+        }
 
-/**/
+        @keyframes img {
+            25% {
+                transform: rotate(-180deg);
+            }
+
+            50% {
+                transform: translateX(-90px);
+            }
+
+            75% {
+                transform: scale(1.1);
+            }
+        }
+
+        .tl1 {
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+    }
