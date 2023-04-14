@@ -318,7 +318,7 @@ img.imga {
         top: -25%;
     }
 }
-    @media screen and (max-width: 270px) {
+    @media screen and (max-width: 276px) {
         img.imga {
             top: -18%;
         }
