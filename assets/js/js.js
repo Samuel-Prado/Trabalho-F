@@ -1,6 +1,5 @@
-
 var btnMob = document.getElementByClassName("btnMub");
 
-btnMob.addEventListener('click', function() {
+document', function() {
   alert('Botão clicado!');
 });
