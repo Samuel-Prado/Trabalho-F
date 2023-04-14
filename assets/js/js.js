@@ -1,5 +1,5 @@
 
-var btnMob = document.querySelector(".btnMub");
+var btnMob = document.querySelectorAll(".btnMub");
 
 btnMob.addEventListener('click', function() {
 
