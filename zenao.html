@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author"
+        content="Eduardo Carvalho Valadão, Isabela Cunha Silva, Lucas Matheus de Oliveira Barbosa, Samuel Prado Soares, Victor Afonso Fernandes">
+    <meta name="generator" content="Visual Studio Code, Github">
+    <meta name="keywords" content="filosofia, educação, pensadores, web design, criatividade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Filosofia</title>
+    <!--Atividade trimestral de Filosofia - 1º trimestre-->
+    <!--2º ano do EM - Técnico em Desenvolvimento de Sitemas - IFTM Uberlândia Centro-->
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+    
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                box-sizing: border-box;
+            }
+            
+            :root {
+                --cinza: #E0E0E0;
+                --color-azul-100: #364c59;
+                --color-azul-10: #84b1d9;
+                --color-azul-30: #71A8D8;
+                --color-azul-50: #5fa0d9;
+            }
+            
+            body {
+                background-color: var(--color-azul-100);
+            }
+    
+            .top-title {
+                font-size: 1.5rem;
+                color: var(--color-azul-100);
+                text-transform: uppercase;
+            }
+    
+            section.container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: var(--color-azul-10);
+                max-width: 80%;
+                min-width: 280px;
+                padding: 10px;
+                margin: 100px auto;
+                border-radius: 30px;
+            }
+    
+            .container div {
+                width: 100%;
+            }
+    
+            .container p {
+                padding: 12px;
+                text-align: justify;
+                /* margin-top: 10px; */
+            }
+
+            .ddiv {
+                padding: 12px;
+                text-align: justify;
+            }
+    
+            .ddiv2 {
+                padding: 12px;
+                text-align: auto;
+                margin-top: 0.00003px;
+            }
+
+            .container .container-top .filo-name, .container .t2 {
+                text-align: center;
+                margin: 15px;
+                color: var(--color-azul-100);
+            }
+    
+            .filo-name {
+                font-size: 30px;
+            }
+    
+            .container-top {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+    
+            .container .container-top img {
+                width: 90%;
+                margin: 15px auto;
+                border-radius: 30px;
+            }
+            #tback {
+            margin: 5px 20px;
+            float: left;
+        }
+        </style>
+        <script>
+            function turnBack() {
+                location.replace('https://samuel-prado.github.io/Trabalho-F/#zenão');
+            }
+        </script>
+</head>
+        <body>
+            <div class="falsebar">
+                <form>
+                    <input id="tback" type="button" value="Voltar" onclick="turnBack()">
+                </form>
+                <h1 class="top-title">Filosofia</h1>
+        </div>
+            <section class="container">
+                <div class="container-top">  
+                    <h1 class="filo-name">Zenão</h1>
+                    <img src="assets/img/zenão.jfif" alt="Zenão">
+                </div>
+                <div class="container-body">
+                    <h1 class="t2">Os nossos sentidos nos enganam ou dizem a verdade?</h1>
+                    <p class="txt">
+                        Zenão foi um filósofo que usava paradoxos como antíteses às ideias de outros filósofos. Um paradoxo é uma declaração aparentemente verdadeira que leva a uma contradição lógica, ou seja, há conflito na ideia de saber se são seus sentidos que te dizem a verdade ou se é a sua razão que te diz a verdade, já que os 2 juntos não tem como existir.
+                        Um exemplo de paradoxo que Zenão usava eram as teses contra o movimento:
+                        <div class="ddiv">"Um corpo quer mover-se entre o ponto A e B mas ele nunca chegará em B, pois, entre os pontos A e B, há uma distância determinada que pode ser dividida ao meio infinitas vezes, resultando em uma infinita sequência de espaços que o objeto terá de percorrer."</div>
+                        
+                        <div class="ddiv2">Exemplo: se de A para B tem 5 cm, ele terá que percorrer sua metade primeiro: 5/2 = 2,5 cm.</div>
+                        <div class="ddiv2">Para percorrer os 2,5 cm ele terá que percorrer sua metade primeiro: 2,5/2 = 1,25.</div>
+                        <div class="ddiv2">Para percorrer os 1,25 cm ele terá que percorrer sua metade primeiro: 1,25/2 = 0,625.</div>
+                        <div class="ddiv2">Para percorrer os 0,625 cm ele terá que percorrer sua metade primeiro: 0,625/2 = 0,3125, e assim em diante.</div>
+                    </p>
+                </div>
+            </section>
+
+        </body>
+    </head>
+</html>

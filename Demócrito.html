@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author"
+        content="Eduardo Carvalho Valadão, Isabela Cunha Silva, Lucas Matheus de Oliveira Barbosa, Samuel Prado Soares, Victor Afonso Fernandes">
+    <meta name="generator" content="Visual Studio Code, Github">
+    <meta name="keywords" content="filosofia, educação, pensadores, web design, criatividade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Filosofia</title>
+    <!--Atividade trimestral de Filosofia - 1º trimestre-->
+    <!--2º ano do EM - Técnico em Desenvolvimento de Sitemas - IFTM Uberlândia Centro-->
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cinza: #E0E0E0;
+            --color-azul-100: #364c59;
+            --color-azul-10: #84b1d9;
+            --color-azul-30: #71A8D8;
+            --color-azul-50: #5fa0d9;
+        }
+        body {
+            background-color: var(--color-azul-100);
+        }
+
+        .top-title {
+            font-size: 1.5rem;
+            color: var(--color-azul-100);
+            text-transform: uppercase;
+        }
+
+        section.container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--color-azul-10);
+            max-width: 80%;
+            min-width: 280px;
+            padding: 10px;
+            margin: 100px auto;
+            border-radius: 30px;
+        }
+
+        .container div {
+            width: 100%;
+        }
+
+        .container p {
+            padding: 12px;
+            text-align: justify;
+        }
+
+        .container .container-top .filo-name, .container .t2 {
+            text-align: center;
+            margin: 15px;
+            color: var(--color-azul-100);
+        }
+
+        .filo-name {
+            font-size: 30px;
+        }
+
+        .container-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container .container-top img {
+            width: 90%;
+            margin: 15px auto;
+            border-radius: 30px;
+        }
+
+        #tback {
+            margin: 5px 20px;
+            float: left;
+        }
+
+
+    </style>
+    <script>
+        function turnBack() {
+            location.replace('https://samuel-prado.github.io/Trabalho-F/#demócrito');
+        }
+    </script>
+</head>
+<body>
+    <div class="falsebar">
+            <form>
+                <input id="tback" type="button" value="Voltar" onclick="turnBack()">
+            </form>
+            <h1 class="top-title">Filosofia</h1>
+    </div>
+
+    <section class="container">
+        <div class="container-top">
+            <div class="t1">
+                <h1 class="filo-name">Demócrito</h1>
+            </div>
+            <img src="assets/img/demócrito.jfif" alt="Demócrito">
+        </div>
+        <div class="container-body">
+            <h1 class="t2">Qual o princípio gerador de tudo?</h1>
+            <p class="txt">
+                Sua ideia era de que todo o universo, desde seres humanos, flores e planetas, são constituídos de partículas minúsculas que chamaram de átomos, que em grego significa “o que não pode ser cortado”.
+                Exemplo de átomo: Se pegarmos um objeto, como uma pedra, é possível dividi-la em partes menores, pois ela é constituída por um conjunto de elementos. Porém, chegará um momento em que não será mais possível continuar com essa divisão, porque teremos chegado a partículas que “não podem ser cortadas”, ou seja, teremos chegado aos átomos que constituem a pedra.
+                Os átomos de Demócrito são invisíveis, indivisíveis, imutáveis, indestrutíveis e incriados. Ou seja, os átomos sempre existiram e sempre existirão. 
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>

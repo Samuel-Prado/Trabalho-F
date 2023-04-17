@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author"
+        content="Eduardo Carvalho Valadão, Isabela Cunha Silva, Lucas Matheus de Oliveira Barbosa, Samuel Prado Soares, Victor Afonso Fernandes">
+    <meta name="generator" content="Visual Studio Code, Github">
+    <meta name="keywords" content="filosofia, educação, pensadores, web design, criatividade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Filosofia</title>
+    <!--Atividade trimestral de Filosofia - 1º trimestre-->
+    <!--2º ano do EM - Técnico em Desenvolvimento de Sitemas - IFTM Uberlândia Centro-->
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cinza: #E0E0E0;
+            --color-azul-100: #364c59;
+            --color-azul-10: #84b1d9;
+            --color-azul-30: #71A8D8;
+            --color-azul-50: #5fa0d9;
+        }
+        body {
+            background-color: var(--color-azul-100);
+        }
+
+        .top-title {
+            font-size: 1.5rem;
+            color: var(--color-azul-100);
+            text-transform: uppercase;
+        }
+
+        section.container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--color-azul-10);
+            max-width: 80%;
+            min-width: 280px;
+            padding: 10px;
+            margin: 100px auto;
+            border-radius: 30px;
+        }
+
+        .container div {
+            width: 100%;
+        }
+
+        .container p {
+            padding: 12px;
+            text-align: justify;
+        }
+
+        .container .container-top .filo-name, .container .t2 {
+            text-align: center;
+            margin: 15px;
+            color: var(--color-azul-100);
+        }
+
+        .filo-name {
+            font-size: 30px;
+        }
+
+        .container-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container .container-top img {
+            width: 90%;
+            margin: 15px auto;
+            border-radius: 30px;
+        }
+
+        #tback {
+            margin: 5px 20px;
+            float: left;
+        }
+
+
+    </style>
+    <script>
+        function turnBack() {
+            location.replace('https://samuel-prado.github.io/Trabalho-F/#anaximandro');
+        }
+    </script>
+</head>
+<body>
+    <div class="falsebar">
+            <form>
+                <input id="tback" type="button" value="Voltar" onclick="turnBack()">
+            </form>
+            <h1 class="top-title">Filosofia</h1>
+    </div>
+    
+    <section class="container">
+        <div class="container-top">  
+            <h1 class="filo-name">Anaximandro</h1>
+            <img src="assets/img/anaximandro.jfif" alt="Anaximandro">
+        </div>
+        <div class="container-body">
+            <h1 class="t2">Qual o princípio gerador de tudo?</h1>
+            <p class="txt">
+                Tales afirmava que o princípio básico de todas as coisas é a água, já Anaximandro (que foi discípulo de Tales)
+                encontrou outra resposta para esse questionamento: o apeiron, uma palavra grega que se refere a algo infinito,
+                indeterminado.
+                Para o filósofo, o que está por trás de todas as coisas não é uma coisa em particular, como a água de Tales, mas
+                algo mais abstrato que não pode ser observado. Seria uma substância básica a partir do qual tudo é criado e
+                eterna, não pode deixar de existir.
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>
