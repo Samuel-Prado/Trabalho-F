@@ -147,7 +147,6 @@ nav {
     padding: 15px 5px;
     border-radius: 15px;
     transition: background .5s ease-in-out;
-    margin-top: 20px;
 }
 
 .link:hover {
@@ -310,6 +309,7 @@ img.imga {
         position: absolute;
         visibility: hidden;
         overflow-x: hidden;
+        margin-top: 20px;
     }
 
     .mgh {
