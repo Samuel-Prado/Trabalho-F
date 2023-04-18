@@ -84,6 +84,7 @@ nav {
     transition: all .5s ease-in-out;
     visibility: visible;
     overflow-x: hidden;
+
 }
 
 .btnMub {
@@ -309,7 +310,6 @@ img.imga {
         position: absolute;
         visibility: hidden;
         overflow-x: hidden;
-        margin-top: 20px;
     }
 
     .mgh {
@@ -340,7 +340,7 @@ img.imga {
     }
 
     .caixa {
-        width: 100%;
+        width: 90%;
     }
 
     .tl1 {
