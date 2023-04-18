@@ -6,3 +6,9 @@ function test(){
     var btnMob2 = document.querySelector(".itens");
     btnMob2.classList.toggle("ativo");
 };
+
+function btnNo(){
+    if(window.innerWidth < 600){
+        test();
+    }
+}
