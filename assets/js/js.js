@@ -11,4 +11,4 @@ function btnNo(){
     if(window.innerWidth < 600){
         test();
     }
-}
+};
